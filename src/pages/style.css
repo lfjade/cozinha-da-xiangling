@@ -1,0 +1,90 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-image: url('img/xianling-login.jpg');
+    background-size: cover; /* cobre toda a tela */
+    background-position: center; /* mantém a imagem centralizada */
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh; /* ocupa 100% da altura da tela */
+}
+
+.container{
+    width: 60vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#botoes {
+    box-sizing: border-box;
+    display: flex;
+    gap: 5px
+}
+
+button{
+    flex: 1;
+}
+
+footer{
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 15vw;
+    height: 30vh;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 1px solid rgb(151, 121, 75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.card img {
+    width: 70%;
+}
+
+.card-selected {
+    border: 2px solid rgb(81, 255, 0);
+    background-color: #557491;
+}
