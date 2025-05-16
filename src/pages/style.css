@@ -88,3 +88,5 @@ h1, h2{
     border: 2px solid rgb(81, 255, 0);
     background-color: #557491;
 }
+
+/* descobrir por que funciona no electron mas no brave nao */

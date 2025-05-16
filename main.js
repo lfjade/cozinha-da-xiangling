@@ -8,12 +8,21 @@ async function createMainWindow(){
         }
     })
     await mainWindow.loadFile('src/pages/index.html')
+    server = require('./gemini.js')
 }
 
 app.whenReady().then(createMainWindow)
 
 app.on('window-all-closed', () =>{
     if (process.platform !== 'darwin'){
-        app.quit()
+        if (server){
+            server.close(() => {
+                console.log("Servidor encerrado.")
+                app.quit()
+            })
+
+        } else {
+            app.quit()
+        }
     }
 })
